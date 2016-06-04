@@ -27,25 +27,28 @@ The utility will manage extraction of individual Unicode descriptors of length 4
 
 Already done:
 
-	- unicode and plain text conversion
+	- unicode and plain text conversion using the gnu Unifont bdf file, which includes Chinese, Korean and Japanese glyphs.
 	- gaussian shaping of the start and stop of tones to minimise splatter
+	- no memory leaks on testing with valgrind
 
 TODO:
 
+	- more command line options for tone spacing, duration, verbosity, tone shaping
 	- more efficient use of memory
-	- optimisation of the audio generation routine
+	- optimisation of the audio generation routine and glyph map code
 	- interactive CLI with audio out, maybe for pulseAudio
 	- audio generation code for other orientations of the glyphs, i.e. left rotated, etc...
 
 Licence information:
 
 gnu Unifont: see http://unifoundry.com/
+
 see also http://unifoundry.com/pub/unifont-8.0.01/unifont-8.0.01.bmp for the complete glyph table
 
 
 
-bitmap2waterfall.cc v1.0
-main.cc v1.0
+bitmap2waterfall.cc v1.0, 
+main.cc v1.0, 
 comprising gnuUnifont2things
 
 Copyright (C) 2016 Erich S. Heinzle, a1039181@gmail.com
